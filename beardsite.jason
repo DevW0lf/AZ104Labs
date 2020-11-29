@@ -489,7 +489,7 @@
         {
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "2019-07-01",
-            "name": "[parameters('networkInterfaces_backendserver889_name')]",
+            "name": "[variables('nicname')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', variables('backendpip'))]",
